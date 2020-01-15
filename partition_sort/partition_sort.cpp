@@ -53,5 +53,7 @@ int main(int argc, char* argv[]) {
 			fprintf(outputFile, "%s", line);
 		}	
 	}
-		
+	
+	fcloseall();
+	return 0;		
 }
