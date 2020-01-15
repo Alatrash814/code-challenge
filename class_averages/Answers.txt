@@ -1,0 +1,5 @@
+1. SELECT COUNT(`Students`.`identifier`), `Class`.`school` FROM `Students` JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier`;
+2. SELECT MAX(`Students`.`Score`), MIN(`Students`.`Score`), AVG(`Students`.`Score`), `Class`.`school` FROM `Students` JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier`;
+3. SELECT MAX(`Students`.`Score`), MIN(`Students`.`Score`), AVG(`Students`.`Score`) FROM `Students`;
+4. SELECT MAX(`Students`.`Score`), `Class`.`school`FROM `Students` JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier` WHERE `Students`.`Score` = MAX(`Students`.`Score`);
+5. SELECT MIN(`Students`.`Score`), `Class`.`school`FROM `Students` JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier` WHERE `Students`.`Score` = MIN(`Students`.`Score`);
