@@ -1,0 +1,7 @@
+This solution is written in C++, you must have g++ compiler in your machine to run this program.
+To run this program you must run this command on Windows CMD or Unix Terminal or Max OS Terminal:
+	g++ Image_processing.cpp -o Image_processing
+Then you should run the executable program, by write this command:
+	Image_processing
+
+To ensure that the program works, you must put input.txt with it in the same folder.
