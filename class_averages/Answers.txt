@@ -1,7 +1,8 @@
 SELECT COUNT(`Students`.`identifier`), 
        `Class`.`school`
 FROM `Students` 
-JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier`;
+JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier`
+GROUP BY `Class`.`school`;
 
 
 SELECT MAX(`Students`.`Score`), 
@@ -9,7 +10,8 @@ SELECT MAX(`Students`.`Score`),
        AVG(`Students`.`Score`), 
        `Class`.`school` 
 FROM `Students`
-JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier`;
+JOIN `Class` ON `Class`.`identifier` = `Students`.`class_identifier`
+GROUP BY `Class`.`school`;
 
 
 SELECT MAX(`Students`.`Score`), 
